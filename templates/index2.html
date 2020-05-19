@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICC Ranking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Test Ranking</h2>
+            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Ratings</th>
+      </tr>
+    </thead>
+    <tbody>  
+      
+          
+            {% for i in range(ran|length) %}
+              <tr>
+                <td>{{ran[i]}}</td>
+                <td>{{nam[i]}}</td>
+                <td>{{coun[i]}}</td>
+                <td>{{rati[i]}}</td>
+              </tr>
+            {% endfor %}
+          
+    </tbody>
+  </table>
+</div>
+<div class="container">
+  <h2>ODI Ranking</h2>
+            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Ratings</th>
+      </tr>
+    </thead>
+    <tbody>  
+      
+          
+            {% for i in range(rank|length) %}
+              <tr>
+                <td>{{rank[i]}}</td>
+                <td>{{name[i]}}</td>
+                <td>{{count[i]}}</td>
+                <td>{{ratin[i]}}</td>
+              </tr>
+            {% endfor %}
+          
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h2>T20 Ranking</h2>
+            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Ratings</th>
+      </tr>
+    </thead>
+    <tbody>  
+      
+          
+            {% for i in range(rank1|length) %}
+              <tr>
+                <td>{{rank1[i]}}</td>
+                <td>{{name1[i]}}</td>
+                <td>{{countr[i]}}</td>
+                <td>{{rating[i]}}</td>
+              </tr>
+            {% endfor %}
+          
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
