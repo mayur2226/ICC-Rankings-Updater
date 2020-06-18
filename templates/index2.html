@@ -6,14 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function dark() {
+      //document.querySelector('.container2').innerHTML = "<button>Light</button>";
+      document.querySelector('.contain').style.background='black';
+      document.querySelector('.contain').style.color='white';
+      document.querySelector('.btn btn-light').style.color='black';
+     
+    }
+    function light() {
+      //document.querySelector('.container2').innerHTML = "<button>Light</button>";
+      document.querySelector('.contain').style.background='white';
+      document.querySelector('.contain').style.color='black';
+     
+    }
+  </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="container">
+  <div class="contain">
+<div  class="container">
+  <div class="container2">
+    <button style="border-color: black;" type="button" class="btn btn-light" onclick="light();">Light</button>
+    <button style="background-color: black; color: cornsilk;" type="button" class="btn btn-dark" onclick="dark();">Dark</button>
+  </div>
   <h2>Test Ranking</h2>
-            
-  <table class="table table-hover">
+             
+  <table class="table table">
     <thead>
       <tr>
         <th>Rank</th>
@@ -91,6 +110,7 @@
           
     </tbody>
   </table>
+</div>
 </div>
 </body>
 </html>
